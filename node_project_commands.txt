@@ -1,0 +1,3 @@
+npx license mit > LICENSE
+npx gitignore node
+npm init
