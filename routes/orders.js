@@ -44,7 +44,7 @@ router.post('/', async (req, res) => {
             [client_id, order_date, total_amount, status || 'pending']
         );
         res.status(201).json({ 
-            order_id: result.insertId, 
+            order_id: result.affectedRows.insertId, 
             message: 'Order created successfully' 
         });
     } catch (error) {

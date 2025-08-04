@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
             [name, email, address]
         );
         res.status(201).json({ 
-            client_id: result.insertId, 
+            client_id: result.affectedRows.client_id, 
             message: 'Client created successfully' 
         });
     } catch (error) {
